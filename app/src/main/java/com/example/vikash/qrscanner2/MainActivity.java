@@ -109,10 +109,10 @@ public class MainActivity extends AppCompatActivity {
                                                      public void run() {
                                                          barcodeInfo.setText(barcodes.valueAt(0).displayValue);
 
-//                            //Do not start web brower
-//                            Intent webIntent = new Intent(getBaseContext(), WebActivity.class);
-//                            webIntent.putExtra("url", barcodes.valueAt(0).displayValue.toString());
-//                            startActivity(webIntent);
+
+                                                         Intent webIntent = new Intent(getBaseContext(), WebActivity.class);
+                                                         webIntent.putExtra("url", barcodes.valueAt(0).displayValue.toString());
+                                                         startActivity(webIntent);
                                                      }
                                                  });
                                                  String str = barcodes.valueAt(0).displayValue;
